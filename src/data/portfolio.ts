@@ -16,6 +16,7 @@ export const projects = [
       "A multilingual digital public good that gathers citizen infrastructure feedback across BRICS through voice, text, and messaging, then maps demand hotspots and generates AI-powered policy recommendations.",
     stack: ["React", "FastAPI", "MongoDB", "Groq AI"],
     href: "https://github.com/NishaanPadanthaya/civicpulse-brics2026",
+    linkLabel: "GitHub",
     diagram: {
       label: "CITIZEN FEEDBACK TO POLICY INSIGHT",
       steps: ["Voice · text", "Transcribe · translate", "Demand heatmaps", "Policy insights"],
@@ -28,7 +29,8 @@ export const projects = [
     description:
       "An AI research assistant that finds relevant arXiv papers and turns them into structured summaries with focused search and synthesis agents.",
     stack: ["Python", "CrewAI", "FastAPI", "Gemini"],
-    href: profile.github,
+    href: "https://github.com/NishaanPadanthaya/Paper-Reviewer-AI",
+    linkLabel: "GitHub",
     diagram: {
       label: "PAPER-TO-BRIEF WORKFLOW",
       steps: ["arXiv papers", "Search agent", "Summary agent", "Research brief"],
@@ -41,7 +43,8 @@ export const projects = [
     description:
       "An AI productivity platform for tone-aware rewriting, document question answering, and generating presentation decks with speaker notes.",
     stack: ["Python", "Gemini", "React"],
-    href: profile.github,
+    href: "https://github.com/NishaanPadanthaya/TextIQ-Smart-Content-Automation",
+    linkLabel: "GitHub",
     diagram: {
       label: "CONTENT WORKSPACE",
       steps: ["Text or document", "Rewrite · ask · explore", "Presentation deck"],
@@ -54,7 +57,8 @@ export const projects = [
     description:
       "A topic-modelling pipeline that groups research abstracts and maps relationships between themes as an analyzable graph.",
     stack: ["KeyBERT", "Llama 2", "UMAP", "HDBSCAN"],
-    href: profile.github,
+    href: "/papers/reading-between-the-lines.pdf",
+    linkLabel: "Paper PDF",
     diagram: {
       label: "ABSTRACTS TO CONNECTED THEMES",
       steps: ["Abstracts", "Topic discovery", "Clusters", "Similarity graph"],
@@ -67,7 +71,8 @@ export const projects = [
     description:
       "A finance app that extracts transactions from receipt images, organizes spending, and offers guidance informed by spending patterns.",
     stack: ["Next.js", "Gemini Vision", "PostgreSQL"],
-    href: profile.github,
+    href: "https://github.com/NishaanPadanthaya/SmartSaver",
+    linkLabel: "GitHub",
     diagram: {
       label: "RECEIPT-TO-SPENDING INSIGHT",
       steps: ["Receipt image", "Vision extraction", "Expense categories", "Spending view"],
@@ -80,7 +85,8 @@ export const projects = [
     description:
       "A research project exploring hypergraph neural networks to combine structural MRI and clinical data for neurodegenerative disorder classification and severity analysis.",
     stack: ["HyperGNN", "MRI + clinical data", "SHAP", "Grad-CAM"],
-    href: profile.github,
+    href: "/papers/hypergnns-multimodal-classification.pdf",
+    linkLabel: "Paper PDF",
     diagram: {
       label: "MULTIMODAL PATIENT GRAPH",
       steps: ["MRI + clinical", "Patient hypergraph", "Classification", "SHAP · Grad-CAM"],

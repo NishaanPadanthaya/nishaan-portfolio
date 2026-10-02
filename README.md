@@ -63,4 +63,4 @@ Edit `src/data/portfolio.ts` to update profile details, projects, skill groups, 
 
 ## Project links
 
-CivicPulse links directly to its repository. Other project cards currently link to the public GitHub profile; update their `href` values in `src/data/portfolio.ts` when direct repository URLs are available.
+GitHub project cards link to matching public repositories. The two research project cards link to their matching publication PDFs.
