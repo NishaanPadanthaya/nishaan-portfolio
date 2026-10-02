@@ -6,17 +6,18 @@ A responsive personal portfolio for AI/ML engineering, applied research, and sof
 
 - Next.js 16 App Router
 - React 19 and TypeScript
-- CSS with responsive layouts, custom motion, and reduced-motion support
-- Static SVG graphics and a CSS/SVG network illustration; no runtime API or WebGL dependency
+- Responsive CSS design system with reduced-motion support
+- Self-hosted variable fonts using the Next.js font optimizer
+- Static SVG and CSS diagrams; no runtime API or WebGL dependency
 
 ## Features
 
-- Editorial portfolio covering about, experience, projects, research, skills, education, recognition, and contact
+- Portfolio covering about, experience, six projects, published research, skills, education, achievements, and contact
 - Responsive navigation with active section state and mobile menu
 - Interactive graph-inspired hero illustration with reduced-motion accommodations
+- Project diagrams show each system's inputs, main processing stages, and outputs
 - Project and publication content maintained as structured TypeScript data
-- Résumé download served as a static public asset
-- SEO, Open Graph and Twitter titles/descriptions, favicon, and a share image asset
+- SEO, Open Graph and Twitter titles/descriptions, and a custom favicon
 
 ## Run locally
 
@@ -52,14 +53,12 @@ src/
     portfolio.ts      Projects, skills, publications, and achievements
 public/
   favicon.svg
-  og-cover.svg
-  Nishaan_Padanthaya_Resume.pdf
 ```
 
 ## Updating content
 
-Edit `src/data/portfolio.ts` to update profile details, projects, skill groups, publications, or achievements. AVEVA experience copy is kept general for public use; update it in `src/app/page.tsx` only with information approved for publication. Replace the public résumé PDF when a new version is ready.
+Edit `src/data/portfolio.ts` to update profile details, projects, skill groups, publications, or achievements. AVEVA experience copy is kept general for public use; update it in `src/app/page.tsx` only with information approved for publication.
 
 ## Project links
 
-The selected projects are summarized from the supplied résumé. GitHub project repository URLs were not available in that source, so project links lead to the public GitHub profile; update them with direct repository links in `src/data/portfolio.ts` when confirmed.
+GitHub project repository URLs are not configured yet, so the project links lead to the public GitHub profile. Update the project entries in `src/data/portfolio.ts` with direct repository links when available.
