@@ -1,4 +1,4 @@
-# Nishaan Padanthaya — Portfolio
+# Nishaan Jeevan Padanthaya — Portfolio
 
 A responsive personal portfolio for AI/ML engineering, applied research, and software projects. Built as a static-first Next.js application for straightforward deployment to Vercel.
 
@@ -16,6 +16,7 @@ A responsive personal portfolio for AI/ML engineering, applied research, and sof
 - Responsive navigation with active section state and mobile menu
 - Interactive graph-inspired hero illustration with reduced-motion accommodations
 - Project diagrams show each system's inputs, main processing stages, and outputs
+- Publication titles link to the corresponding paper PDFs, opening in a new tab
 - Project and publication content maintained as structured TypeScript data
 - SEO, Open Graph and Twitter titles/descriptions, and a custom favicon
 
@@ -53,6 +54,7 @@ src/
     portfolio.ts      Projects, skills, publications, and achievements
 public/
   favicon.svg
+  papers/              Published research PDFs
 ```
 
 ## Updating content
@@ -61,4 +63,4 @@ Edit `src/data/portfolio.ts` to update profile details, projects, skill groups, 
 
 ## Project links
 
-GitHub project repository URLs are not configured yet, so the project links lead to the public GitHub profile. Update the project entries in `src/data/portfolio.ts` with direct repository links when available.
+CivicPulse links directly to its repository. Other project cards currently link to the public GitHub profile; update their `href` values in `src/data/portfolio.ts` when direct repository URLs are available.

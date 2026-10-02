@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Nishaan Padanthaya",
+  name: "Nishaan Jeevan Padanthaya",
   role: "AI / ML Engineer",
   email: "nishaanpj@gmail.com",
   github: "https://github.com/NishaanPadanthaya",
@@ -10,6 +10,19 @@ export const profile = {
 export const projects = [
   {
     number: "01",
+    title: "CivicPulse",
+    category: "AI for public good · BRICS 2026",
+    description:
+      "A multilingual digital public good that gathers citizen infrastructure feedback across BRICS through voice, text, and messaging, then maps demand hotspots and generates AI-powered policy recommendations.",
+    stack: ["React", "FastAPI", "MongoDB", "Groq AI"],
+    href: "https://github.com/NishaanPadanthaya/civicpulse-brics2026",
+    diagram: {
+      label: "CITIZEN FEEDBACK TO POLICY INSIGHT",
+      steps: ["Voice · text", "Transcribe · translate", "Demand heatmaps", "Policy insights"],
+    },
+  },
+  {
+    number: "02",
     title: "PaperReviewer AI",
     category: "Agentic research",
     description:
@@ -22,7 +35,7 @@ export const projects = [
     },
   },
   {
-    number: "02",
+    number: "03",
     title: "TextIQ",
     category: "Generative AI",
     description:
@@ -35,7 +48,7 @@ export const projects = [
     },
   },
   {
-    number: "03",
+    number: "04",
     title: "Research Topic Graphs",
     category: "NLP · Knowledge graphs",
     description:
@@ -48,7 +61,7 @@ export const projects = [
     },
   },
   {
-    number: "04",
+    number: "05",
     title: "SmartSaver AI",
     category: "Applied AI · Finance",
     description:
@@ -61,7 +74,7 @@ export const projects = [
     },
   },
   {
-    number: "05",
+    number: "06",
     title: "Multimodal HyperGNNs",
     category: "Published research · Medical AI",
     description:
@@ -71,19 +84,6 @@ export const projects = [
     diagram: {
       label: "MULTIMODAL PATIENT GRAPH",
       steps: ["MRI + clinical", "Patient hypergraph", "Classification", "SHAP · Grad-CAM"],
-    },
-  },
-  {
-    number: "06",
-    title: "Traffic Accident Detection",
-    category: "Published research · Computer vision",
-    description:
-      "A comparative study of deep-learning approaches for traffic accident detection, with an emphasis on making model behaviour more interpretable.",
-    stack: ["Deep learning", "Video analysis", "Explainable AI"],
-    href: profile.github,
-    diagram: {
-      label: "DETECTION AND EXPLANATION",
-      steps: ["Traffic frames", "Model comparison", "Accident detection", "Model explanation"],
     },
   },
 ];
@@ -112,7 +112,7 @@ export const publications = [
     year: "2026",
     venue: "ICTIS 2026",
     title: "HyperGNNs for Multi-Modal Classification and Severity Analysis of Neurodegenerative Disorders",
-    authors: "K. Bhavish Raju, K. Musadiq Pasha, Mohammed Saqlain, Nishaan Padanthaya, Jayashree R.",
+    href: "/papers/hypergnns-multimodal-classification.pdf",
     summary:
       "Published research exploring hypergraph neural networks for combining structural MRI and clinical data in neurodegenerative disorder classification, with SHAP and Grad-CAM used to support interpretability.",
     tags: ["Hypergraph neural networks", "Multimodal learning", "Explainable AI"],
@@ -121,6 +121,7 @@ export const publications = [
     year: "2025",
     venue: "WCAIAA 2025",
     title: "Reading Between the Lines: LLM-Powered Topic Modelling and Graph-Based Insights from Research Abstracts",
+    href: "/papers/reading-between-the-lines.pdf",
     summary:
       "Published research combining language-model-based topic discovery with graph analysis to surface connections across research abstracts.",
     tags: ["LLMs", "Topic modelling", "Graph analytics"],
@@ -129,6 +130,7 @@ export const publications = [
     year: "2024",
     venue: "ICMBDC 2024",
     title: "Comparative Analysis of Traffic Accident Detection with Emphasis on Explainability of DL Models",
+    href: "/papers/traffic-accident-detection-explainability.pdf",
     summary:
       "Published comparative research on deep-learning approaches to traffic accident detection, focused on explainability of model behaviour.",
     tags: ["Computer vision", "Deep learning", "Explainable AI"],
