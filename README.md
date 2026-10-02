@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nishaan Padanthaya — Portfolio
 
-## Getting Started
+A responsive personal portfolio for AI/ML engineering, applied research, and software projects. Built as a static-first Next.js application for straightforward deployment to Vercel.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 App Router
+- React 19 and TypeScript
+- CSS with responsive layouts, custom motion, and reduced-motion support
+- Static SVG graphics and a CSS/SVG network illustration; no runtime API or WebGL dependency
+
+## Features
+
+- Editorial portfolio covering about, experience, projects, research, skills, education, recognition, and contact
+- Responsive navigation with active section state and mobile menu
+- Interactive graph-inspired hero illustration with reduced-motion accommodations
+- Project and publication content maintained as structured TypeScript data
+- Résumé download served as a static public asset
+- SEO, Open Graph, Twitter card, favicon, and share image metadata
+
+## Run locally
+
+Requires Node.js compatible with the version required by Next.js 16.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Deploy to Vercel
 
-To learn more about Next.js, take a look at the following resources:
+Import this repository into Vercel and use the detected Next.js settings. No environment variables are required. Every route and asset is served by the standard Next.js deployment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+src/
+  app/
+    globals.css       Design system and responsive styles
+    layout.tsx        Site metadata and root layout
+    page.tsx          Portfolio sections and interactions
+  data/
+    portfolio.ts      Projects, skills, publications, and achievements
+public/
+  favicon.svg
+  og-cover.svg
+  Nishaan_Padanthaya_Resume.pdf
+```
 
-## Deploy on Vercel
+## Updating content
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Edit `src/data/portfolio.ts` to update profile details, projects, skill groups, publications, or achievements. AVEVA experience copy is kept general for public use; update it in `src/app/page.tsx` only with information approved for publication. Replace the public résumé PDF when a new version is ready.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project links
+
+The selected projects are summarized from the supplied résumé. GitHub project repository URLs were not available in that source, so project links lead to the public GitHub profile; update them with direct repository links in `src/data/portfolio.ts` when confirmed.
