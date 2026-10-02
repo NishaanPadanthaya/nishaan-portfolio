@@ -16,7 +16,7 @@ A responsive personal portfolio for AI/ML engineering, applied research, and sof
 - Interactive graph-inspired hero illustration with reduced-motion accommodations
 - Project and publication content maintained as structured TypeScript data
 - Résumé download served as a static public asset
-- SEO, Open Graph, Twitter card, favicon, and share image metadata
+- SEO, Open Graph and Twitter titles/descriptions, favicon, and a share image asset
 
 ## Run locally
 
